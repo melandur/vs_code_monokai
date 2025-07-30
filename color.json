@@ -1,5 +1,96 @@
-```json
-"editor.tokenColorCustomizations": {
+ "workbench.colorCustomizations": {
+    "editor.background": "#2b2b2b",
+    "editor.foreground": "#ffffff",
+    "editor.selectionBackground": "#344134",
+    "editor.wordHighlightBackground": "#344134",
+    "editor.wordHighlightStrongBackground": "#40332b",
+    "editor.findMatchBackground": "#40332b",
+    "editor.findMatchHighlightBackground": "#40332b",
+    "editorError.foreground": "#ff0000",
+    "editorWarning.foreground": "#e6db74",
+    "editorLineNumber.foreground": "#75715e",
+    "editorLineNumber.activeForeground": "#ffffff",
+    "editorGutter.background": "#2b2b2b",
+    "editorIndentGuide.background": "#3b3b3b",
+    "editorIndentGuide.activeBackground": "#75715e",
+    "editorRuler.foreground": "#75715e",
+    "sash.hoverBorder": "#75715e",
+    "focusBorder": "#75715e",
+    "terminal.background": "#2b2b2b",
+    "terminal.foreground": "#b0b0b0",
+    "terminal.ansiBlack": "#2b2b2b",
+    "terminal.ansiRed": "#f92672",
+    "terminal.ansiGreen": "#a6e22e",
+    "terminal.ansiYellow": "#d4c86e",
+    "terminal.ansiBlue": "#66d9ef",
+    "terminal.ansiMagenta": "#ae81ff",
+    "terminal.ansiCyan": "#66d9ef",
+    "terminal.ansiWhite": "#d0d0d0",
+    "terminal.ansiBrightBlack": "#75715e",
+    "terminal.ansiBrightRed": "#f92672",
+    "terminal.ansiBrightGreen": "#a6e22e",
+    "terminal.ansiBrightYellow": "#d4c86e",
+    "terminal.ansiBrightBlue": "#66d9ef",
+    "terminal.ansiBrightMagenta": "#ae81ff",
+    "terminal.ansiBrightCyan": "#66d9ef",
+    "terminal.ansiBrightWhite": "#e0e0e0",
+    "sideBar.background": "#2b2b2b",
+    "sideBar.foreground": "#ffffff",
+    "sideBarSectionHeader.background": "#2b2b2b",
+    "sideBarSectionHeader.foreground": "#ffffff",
+    "sideBarTitle.foreground": "#ffffff",
+    "activityBar.background": "#2b2b2b",
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#2b2b2b",
+    "activityBarBadge.foreground": "#ffffff",
+    "statusBar.background": "#2b2b2b",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#2b2b2b",
+    "statusBar.debuggingBackground": "#66d9ef",
+    "statusBar.debuggingForeground": "#2b2b2b",
+    "statusBarItem.remoteBackground": "#2b2b2b",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "titleBar.activeBackground": "#2b2b2b",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#2b2b2b",
+    "titleBar.inactiveForeground": "#aaaaaa",
+    "panel.background": "#2b2b2b",
+    "panel.foreground": "#ffffff",
+    "panelTitle.activeBorder": "#66d9ef",
+    "panelTitle.activeForeground": "#ffffff",
+    "panelTitle.inactiveForeground": "#aaaaaa",
+    "editorGroupHeader.tabsBackground": "#2b2b2b",
+    "tab.activeBackground": "#2b2b2b",
+    "tab.inactiveBackground": "#2b2b2b",
+    "tab.activeForeground": "#ffffff",
+    "tab.inactiveForeground": "#aaaaaa",
+    "tab.border": "#3b3b3b",
+    "tab.activeBorder": "#66d9ef",
+    "tab.activeBorderTop": "#3b3b3b",
+    "list.activeSelectionBackground": "#344134",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.inactiveSelectionBackground": "#344134",
+    "list.inactiveSelectionForeground": "#ffffff",
+    "list.hoverBackground": "#34413450",
+    "list.highlightForeground": "#66d9ef",
+    "button.background": "#66d9ef",
+    "button.foreground": "#2b2b2b",
+    "button.hoverBackground": "#55c9d9",
+    "scrollbar.shadow": "#00000050",
+    "scrollbarSlider.background": "#75715e50",
+    "scrollbarSlider.hoverBackground": "#75715e80",
+    "scrollbarSlider.activeBackground": "#75715e99",
+    "input.background": "#3b3b3b",
+    "input.foreground": "#ffffff",
+    "input.placeholderForeground": "#aaaaaa",
+    "inputOption.activeBackground": "#66d9ef",
+    "inputOption.activeForeground": "#2b2b2b",
+    "dropdown.background": "#3b3b3b",
+    "dropdown.foreground": "#ffffff",
+    "dropdown.border": "#75715e",
+    "progressBar.background": "#66d9ef"
+  },
+  "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": "comment",
@@ -33,6 +124,12 @@
       },
       {
         "scope": "punctuation.definition.comment.shell",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment.shebang.shell",
         "settings": {
           "foreground": "#75715E"
         }
@@ -621,5 +718,4 @@
         "foreground": "#A6E22E"
       }
     }
-  }
-```
+  },
