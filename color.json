@@ -1,0 +1,653 @@
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // Comments (Keeping gray/monokai default for comments)
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "comment.line.number-sign",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "comment.block",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "comment.documentation",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment.python",
+        "settings": {
+          "foreground": "#75715E"
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment.shell", // This targets shell scripts
+        "settings": {
+          "foreground": "#75715E" // But you've set it to WHITE here
+        }
+      },
+      {
+        "scope": "punctuation.definition.comment.json",
+        "settings": {
+          "foreground": "#75715E" // Your desired gray color
+        }
+      },
+      // Strings (Keeping yellow for strings and f-strings)
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.quoted.single",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.quoted.double",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.quoted.triple",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.quoted.docstring.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.regexp",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "string.other",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "storage.type.string.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "meta.fstring.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "punctuation.definition.string.begin.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "punctuation.definition.string.end.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "meta.interpolation.binding.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "punctuation.definition.interpolation.begin.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      {
+        "scope": "punctuation.definition.interpolation.end.python",
+        "settings": {
+          "foreground": "#e6db74"
+        }
+      },
+      // Constants (Keeping purple for numbers and language constants)
+      {
+        "scope": "constant.numeric",
+        "settings": {
+          "foreground": "#ae81ff"
+        }
+      },
+      {
+        "scope": "constant.language",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "constant.character.escape.python",
+        "settings": {
+          "foreground": "#ae81ff"
+        }
+      },
+      {
+        "scope": "constant.other",
+        "settings": {
+          "foreground": "#ae81ff"
+        }
+      },
+      {
+        "scope": "variable.other.constant.python",
+        "settings": {
+          "foreground": "#ae81ff" // e.g., "#66d9ef" for blue or "#ae81ff" for purple
+        }
+      },
+      // Keywords (All blue now)
+      {
+        "scope": "keyword.operator.comparison.python", // Add this specific rule
+        "settings": {
+          "foreground": "#ffffff" // This will make '==' blue
+        }
+      },
+      {
+        "scope": "keyword.operator.word.in.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.declaration",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "keyword.operator.logical.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.other",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "storage.type",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "storage.modifier",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control.flow.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.operator.word.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control.try-except.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control.with.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control.loop.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "keyword.control.conditional.python",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      // Functions & Methods (All blue now)
+      {
+        "scope": "variable.language.special.python",
+        "settings": {
+          "foreground": "#66d9ef" // Changed to blue
+        }
+      },
+      {
+        "scope": "entity.name.function.python",
+        "settings": {
+          "foreground": "#A6E22E" // Green for function names in definitions
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "meta.function-call",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "meta.function-call.generic.python",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "support.function",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "entity.name.method",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "variable.function",
+        "settings": {
+          "foreground": "#ffffff" // Changed to blue
+        }
+      },
+      {
+        "scope": "entity.name.function.decorator",
+        "settings": {
+          "foreground": "#A6E22E", // Changed to blue
+          "fontStyle": "italic"
+        }
+      },
+      // Parameters (Keeping orange/purple where relevant for distinction)
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "foreground": "#fd971f" // Keeping orange for parameters
+        }
+      },
+      {
+        "scope": "variable.language.self.python",
+        "settings": {
+          "foreground": "#fd971f"
+        }
+      },
+      {
+        "scope": "variable.language.cls.python",
+        "settings": {
+          "foreground": "#fd971f"
+        }
+      },
+      {
+        "scope": "variable.annotation",
+        "settings": {
+          "foreground": "#ae81ff" // Changed to purple for annotations
+        }
+      },
+      {
+        "scope": "meta.type-hint",
+        "settings": {
+          "foreground": "#ae81ff" // Changed to purple for type hints
+        }
+      },
+      // Classes & Types (All blue now)
+      {
+        "scope": "entity.name.type.class",
+        "settings": {
+          "foreground": "#ffffff", // Changed to blue
+        }
+      },
+      {
+        "scope": "entity.other.inherited-class",
+        "settings": {
+          "foreground": "#66d9ef" // Changed to blue
+        }
+      },
+      {
+        "scope": "support.class",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      {
+        "scope": "meta.class-call",
+        "settings": {
+          "foreground": "#66d9ef" // Changed to blue
+        }
+      },
+      {
+        "scope": "entity.name.type",
+        "settings": {
+          "foreground": "#66d9ef" // Changed to blue
+        }
+      },
+      // Variables (General) - Keeping white for general variables
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "support.variable",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "entity.name.variable",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "variable.other.member",
+        "settings": {
+          "foreground": "#fd971f" // Keeping orange for members/attributes
+        }
+      },
+      {
+        "scope": "variable.other.property",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "variable.other.object",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "variable.other.definition",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      // Punctuation & Operators (Keeping specific colors where defined)
+      {
+        "scope": "punctuation",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for general punctuation
+        }
+      },
+      {
+        "scope": "punctuation.accessor",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for accessor dot
+        }
+      },
+      {
+        "scope": "punctuation.separator",
+        "settings": {
+          "foreground": "#ffffff" // Keeping pink for separators like commas
+        }
+      },
+      {
+        "scope": "punctuation.definition.parameters",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for parentheses
+        }
+      },
+      {
+        "scope": "punctuation.definition.arguments",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for parentheses
+        }
+      },
+      {
+        "scope": "punctuation.section.parens",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for parentheses
+        }
+      },
+      {
+        "scope": "punctuation.definition.array",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for square brackets
+        }
+      },
+      {
+        "scope": "punctuation.definition.list",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for square brackets
+        }
+      },
+      {
+        "scope": "constant.character.format.placeholder.other.python",
+        "settings": {
+          "foreground": "#fd971f" // Keeping white for square brackets
+        }
+      },
+      {
+        "scope": "punctuation.section.brackets",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for square brackets
+        }
+      },
+      {
+        "scope": "punctuation.definition.dictionary",
+        "settings": {
+          "foreground": "#fd971f" // Keeping white for curly braces
+        }
+      },
+      {
+        "scope": "punctuation.definition.block",
+        "settings": {
+          "foreground": "#fd971f" // Keeping white for curly braces
+        }
+      },
+      {
+        "scope": "punctuation.section.braces",
+        "settings": {
+          "foreground": "#fd971f" // Keeping white for curly braces
+        }
+      },
+      {
+        "scope": "punctuation.definition.decorator",
+        "settings": {
+          "foreground": "#A6E22E" // Changed from a6e22e to #66d9ef for blue theme
+        }
+      },
+      {
+        "scope": "punctuation.separator.colon",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for colon
+        }
+      },
+      {
+        "scope": "punctuation.separator.arrow.python",
+        "settings": {
+          "foreground": "#ffffff" // Keeping white for arrow
+        }
+      },
+      // Modules/Namespaces (All blue now)
+      {
+        "scope": "entity.name.namespace",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "entity.name.module",
+        "settings": {
+          "foreground": "#66d9ef"
+        }
+      },
+      // Markup (Links are blue, code blocks/bold/italic keep their original colors)
+      {
+        "scope": "markup.underline.link",
+        "settings": {
+          "foreground": "#66d9ef",
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": "markup.fenced_code.block",
+        "settings": {
+          "foreground": "#676E95"
+        }
+      },
+      {
+        "scope": "markup.bold",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "markup.italic",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      // Invalid / Deprecated Code (Keeping original error/warning colors)
+      {
+        "scope": "invalid.illegal",
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "bold underline"
+        }
+      },
+      {
+        "scope": "invalid.deprecated",
+        "settings": {
+          "foreground": "#e6db74",
+          "fontStyle": "underline"
+        }
+      },
+      // Attributes (General) - Keeping orange
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "foreground": "#fd971f"
+        }
+      }
+    ]
+  },
+  // ... (rest of your settings up to editor.semanticTokenColorCustomizations) ...
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      // --- Core Variable Coloring Logic ---
+      // 1. Parameters (highest specificity for arguments)
+      //    Keep orange for self/cls and other parameters.
+      "parameter:python": {
+        "foreground": "#fd971f"
+      },
+      // 2. Set the *default* for all 'variable' tokens to GRAY.
+      //    This will catch most local variables (declarations and usages).
+      "variable:python": {
+        "foreground": "#AAAAAA" // DEFAULT for all variables is now GRAY
+      },
+      // 3. Explicitly override declarations to GRAY if needed (redundant with 'variable:python' now, but harmless)
+      //    Kept for historical context or if Pylance ever behaves differently for declaration vs usage.
+      "variable.declaration:python": {
+        "foreground": "#AAAAAA"
+      },
+      // 4. OVERRIDE specific variable types to WHITE:
+      //    a. Global variables (module-level variables)
+      "variable.global:python": {
+        "foreground": "#ffffff" // OVERRIDE: Global variables are WHITE
+      },
+      //    b. Namespaces (imported modules like 'logger', 'time')
+      "namespace:python": {
+        "foreground": "#ffffff" // OVERRIDE: Namespaces/Imports are WHITE
+      },
+      //    c. Properties/Members (e.g., 'data_handler' in 'self.data_handler')
+      //       Sometimes these are just 'variable', sometimes 'property'.
+      //       Explicitly setting 'property' to white helps. You might also need a TextMate rule for 'variable.other.member'
+      //       if this doesn't fully catch it (which you already have set to white in TextMate rules).
+      "property:python": { // Pylance sometimes categorizes member access as 'property'
+        "foreground": "#ffffff" // OVERRIDE: Properties are WHITE
+      },
+      // --- Other specific semantic rules (no change here) ---
+      "function.builtin:python": {
+        "foreground": "#66d9ef" // Built-in functions like 'round' are blue
+      },
+      "variable:python.readonly": {
+        "foreground": "#ffffff"
+      },
+      "method:python.declaration": {
+        "foreground": "#A6E22E"
+      },
+      "class:python.typeHint.builtin": {
+        "foreground": "#66d9ef"
+      },
+      "typeHint:python": {
+        "foreground": "#66d9ef"
+      },
+      // ADD THIS RULE TO MAKE BUILT-IN CLASSES (LIKE 'range') BLUE
+      "class.builtin:python": {
+        "foreground": "#66d9ef"
+      },
+      "class:python.decorator": {
+        "foreground": "#A6E22E",
+        "fontStyle": "italic"
+      },
+      "function.declaration:python": {
+        "foreground": "#A6E22E" // Green for function definitions
+      },
+      "magicFunction": {
+        "foreground": "#66D9EF" // Blue color
+      },
+      "magicFunction.declaration:python": { // Try with .declaration if that's a modifier
+        "foreground": "#66D9EF",
+        "fontStyle": ""
+      },
+      "function.decorator:python": {
+        "foreground": "#A6E22E" // Green color
+      },
+    }
+  },
